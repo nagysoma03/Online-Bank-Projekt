@@ -1,0 +1,132 @@
+/* Alap layout: Két oszlopos elrendezés (bal és jobb szekciók) */
+.layout {
+    display: flex;
+    flex-direction: row; /* Két oszlopos elrendezés */
+    gap: 20px; /* Távolság a két szekció között */
+    height: 100%;
+    flex-wrap: wrap; /* Ha szükséges, az elemek egymás alá kerülnek */
+}
+
+/* Felhasználói adatok szekció (bal oldalon) */
+.account_info {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Bal oldalon 1 egység */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.account_info h2 {
+    font-size: 34px;
+    background-color: #0056b3;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.account_info p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Bejelentkezési előzmények szekció (jobb oldalon) */
+.login_history {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 2; /* Jobb oldalon 2 egység */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.login_history h2 {
+    font-size: 34px;
+    background-color: #0056b3;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.login_history table, .transactions table {
+    max-height: calc(100vh - 200px); /* Maximális magasság beállítása */
+    overflow-y: auto; /* Görgetősáv engedélyezése */
+}
+
+
+.login_history th, .login_history td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.login_history th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.login_history td {
+    font-size: 16px;
+}
+
+/* Transactions szekció (táblázat) középre igazítása */
+.transactions {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Szélesség 100%-ban */
+    margin: 20px auto; /* Felül és alul 20px, középre igazítva */
+    text-align: center; /* Tartalom középre igazítása */
+}
+
+.transactions table {
+    margin: 0 auto; /* Táblázat középre igazítása vízszintesen */
+    width: auto; /* Automatikus szélesség, hogy a tartalomhoz igazodjon */
+}
+
+.transactions table, .transactions th, .transactions td {
+    border: 1px solid #ddd;
+}
+
+.transactions th, .transactions td {
+    padding: 8px;
+    text-align: left;
+}
+
+.transactions th {
+    background-color: #f4f4f4;
+}
+
+.transactions h2 {
+    font-size: 34px;
+    background-color: #0056b3;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.download-button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.download-button:hover {
+    background-color: #004090;
+}

@@ -1,0 +1,78 @@
+/* Hitel részletek táblázatának stílusai */
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+h2 {
+    font-size: 25px;
+    background-color: #0056b3;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    text-align: center; /* Szöveg középre igazítása */
+    margin: 0 0 40px; /* Eltávolítjuk az alapértelmezett margót */
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-container table {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table-container table caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-size: 0.8em;
+    color: #666;
+    text-align: right;
+}
+
+form button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #003d80;
+}

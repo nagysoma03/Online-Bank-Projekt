@@ -1,0 +1,81 @@
+/* A tranzakciók oldalhoz specifikus stílusok */
+.layout {
+    display: flex; /* Flexbox elrendezés */
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start; /* Igazítjuk a két oldalt az elején */
+}
+
+/* Bal oldali oszlop: tranzakciók */
+.left_side {
+    flex: 2; /* Kétszer akkora helyet foglal, mint a jobb oldal */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Jobb oldali oszlop: felhasználói adatok */
+.right_side {
+    flex: 1; /* Egyharmadnyi szélességet kap */
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 860px; /* A minimális magasságot most beállítjuk */
+    display: flex; /* Flexbox használata */
+    flex-direction: column; /* Oszlopirányú elrendezés */
+    align-items: center; /* Tartalom középre igazítása vízszintesen */
+    font-size: 22px;
+}
+
+.right_side h2 {
+    font-size: 25px;
+    background-color: #0056b3;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    text-align: center; /* Szöveg középre igazítása */
+    margin: 0 0 40px; /* Eltávolítjuk az alapértelmezett margót */
+    width: 100%; /* A teljes szélességet kitölti */
+    box-sizing: border-box; /* A padding is beleszámít a szélességbe */
+}
+
+/* Form elemek megjelenítése */
+.left_side form input,
+.left_side form button {
+    margin-bottom: 10px;
+}
+
+.left_side section {
+    height: 220px;
+    padding: 30px;
+}
+
+.left_side form {
+    margin: 0 50px;
+}
+
+h2 {
+    font-size: 25px;
+    background-color: #0056b3;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    text-align: center; /* Szöveg középre igazítása */
+    margin: 0 0 40px; /* Eltávolítjuk az alapértelmezett margót */
+}
+
+.left_side form button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #003d80;
+}

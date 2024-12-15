@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column; /* A body tartalmát egy oszlopban rendezi el */
+    min-height: 100vh; /* Legalább a teljes magasságot kitölti */
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* A név balra, a navigáció középen */
+    align-items: center; /* Függőleges középre igazítás */
+}
+
+footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center; /* Középre igazítja a lábléc szövegét */
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    bottom: 0;
+    margin-top: auto; /* biztosítja, hogy a footer az oldal alján maradjon */
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: #cccccc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+nav {
+    flex-grow: 1; /* Kitölti a köztes helyet */
+    display: flex;
+    justify-content: center; /* Navigáció középre helyezése */
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #003d80;
+    font-weight: bold;
+}
+
+main {
+    flex: 1; /* Kitölti a köztes helyet */
+    padding: 20px;
+}
+
+.fooldal {
+    display: flex;
+    justify-content: space-between; /* A két szakasz közötti hely biztosítása */
+    gap: 20px; /* Kisebb távolság a két oszlop között */
+    padding: 20px;
+}
+
+/* A welcome szakasz (bal oldali oszlop) */
+.welcome {
+    flex: 1; /* A welcome szakasz egyenlő arányban foglalja el a helyet */
+    font-size: 20px;
+}
+
+/* A kapcsolat szakasz (jobb oldali oszlop) */
+.kapcsolat {
+    flex: 0.6; /* A kapcsolat szakasz kisebb helyet foglal el */
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #003d80;
+}
+
+/*logout gomb*/
+.logout-button {
+    padding: 10px 20px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #003d80;
+    font-weight: bold;
+}
+
+header span {
+    font-size: 20px;
+}
